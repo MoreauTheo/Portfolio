@@ -41,6 +41,7 @@
 
 #bannercontent img{
     width:15vw;
+    min-width:350px;
     margin-left:50px;
 }
 
