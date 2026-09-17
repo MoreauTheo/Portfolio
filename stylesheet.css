@@ -22,12 +22,29 @@
 
 #presentationbanner {
     display:flex;
-    height: 50vh;
     background-color: #db6837;
     margin-top:70vh;
-    flex-flow:row;
+    flex-flow:column;
 }
 
-#bannercontent{
-    display:flex
+
+#bannercontent {
+    display: flex;
+    }
+#bannertitle{
+    align-self:center;
+    font-size:70px;
+    font-weight:bold;
+    margin-top : 25px;
+    margin-bottom:25px;
+}
+
+#bannercontent img{
+    width:15vw;
+    margin-left:50px;
+}
+
+#bannercontent p{
+    margin-left:50px;
+    font-size:30px;
 }
