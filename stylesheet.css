@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,30 +7,44 @@ body{
     
 }
 
-
+#stickyheader{
+    display: flex;
+    position: sticky;
+    top:0;
+    background-color: grey;
+    z-index:20;
+    padding-right: 35vw;
+    padding-left: 7vw;
+    justify-content: space-between;
+}
 #nameflexbox {
     display: flex;
     justify-content: center;
-    background-image: url("https://f.hellowork.com/blogdumoderateur/2013/02/nyan-cat-gif-1.gif");
-    height:70vh;
+    height:85vh;
     width:100vw;
-    top:0;
     position:fixed;
-    z-index:-50;
+    z-index:-1;
+}
+
+#nameflexbox video{
+    margin: auto;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
 }
 
 #nametext{
     align-self:center;
     font-size: 5vw;
+    color: white;
 }
 
 #presentationbanner {
     display:flex;
     background-color: #db6837;
-    margin-top:70vh;
+    margin-top:85vh;
     flex-flow:column;
 }
-
 
 #bannercontent {
     display: flex;
@@ -43,8 +56,6 @@ body{
     margin-top : 25px;
     margin-bottom:25px;
 }
-
-
 
 #bannercontent img{
     width:15vw;
@@ -69,18 +80,15 @@ body{
 #projecttitle{
     font-size: 2vw;
 }
-#mainprojectcontainer{
+.projectcontainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-
-
 .projectthumbnailtitle{
 
 }
-
 
 .project{
     display: flex;
@@ -91,3 +99,4 @@ body{
     position: relative;
     margin: 3vw;
 }
+
