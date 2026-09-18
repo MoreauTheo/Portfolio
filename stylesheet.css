@@ -61,7 +61,6 @@ body{
 
 #mainprojectcontainer{
     display: flex;
-    height: 100vh;
     overflow-wrap: wrap;
     justify-content: space-around;
 }
@@ -71,8 +70,8 @@ body{
     border-color: yellow;
     border-style: solid;
     border-width: 5px;
-    width: 150px;
-    height: 150px;
+    min-width: 500px;
+    min-height: 500px;
     position: relative;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykA7OiOf6g23Ggl0EiIQE7yWEkcCWM7q8MziMi-0Mrg&s=10");
 }
