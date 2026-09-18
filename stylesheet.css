@@ -20,17 +20,19 @@ body{
 #nameflexbox {
     display: flex;
     justify-content: center;
-    height:85vh;
     width:100vw;
     position:fixed;
     z-index:-1;
+    min-height: 85vh;
+    min-width: 100vw;
 }
 
 #nameflexbox video{
-    margin: auto;
     position: absolute;
+    overflow: hidden; 
     z-index: -2;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #nametext{
