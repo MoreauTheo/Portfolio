@@ -13,16 +13,16 @@ body{
     top:0;
     background-color: grey;
     z-index:20;
-    padding-right: 20vw;
-    padding-left: 7vw;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 7vh;
     align-items: center;
 }
 
 #stickyheader p{
-    font-size: max(1.5vh,2vw);
-
+    font-size: max(1.7vh,2vw);
+    font-family: "Ubuntu";
+    letter-spacin: 0px;
+    font-weight: 500;
 }
 #nameflexbox {
     display: flex;
