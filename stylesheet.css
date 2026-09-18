@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: yellowgreen;
+    
 }
 
 
@@ -44,6 +44,8 @@ body{
     margin-bottom:25px;
 }
 
+
+
 #bannercontent img{
     width:15vw;
     min-width:350px;
@@ -59,20 +61,33 @@ body{
     justify-self:center;
 }
 
+#projectcontainer{
+    background-color: #0a254f;
+
+}
+
+#projecttitle{
+    font-size: 2vw;
+}
 #mainprojectcontainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+
+
+.projectthumbnailtitle{
+
+}
+
+
 .project{
     display: flex;
+    flex-flow: column;
     border-color: yellow;
     border-style: solid;
     border-width: 5px;
-    min-width: 700px;
-    min-height: 500px;
     position: relative;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykA7OiOf6g23Ggl0EiIQE7yWEkcCWM7q8MziMi-0Mrg&s=10");
-    margin: 5vw;
+    margin: 3vw;
 }
