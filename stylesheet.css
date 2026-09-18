@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+body{
+    background-color: yellowgreen;
+}
+
+
 #nameflexbox {
     display: flex;
     justify-content: center;
@@ -48,4 +53,26 @@
 #bannercontent p{
     margin-left:50px;
     font-size:30px;
+}
+
+.title{
+    justify-self:center;
+}
+
+#mainprojectcontainer{
+    display: flex;
+    height: 100vh;
+    overflow-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project{
+    display: flex;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 5px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykA7OiOf6g23Ggl0EiIQE7yWEkcCWM7q8MziMi-0Mrg&s=10");
 }
