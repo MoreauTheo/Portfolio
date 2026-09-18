@@ -61,7 +61,7 @@ body{
 
 #mainprojectcontainer{
     display: flex;
-    overflow-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
