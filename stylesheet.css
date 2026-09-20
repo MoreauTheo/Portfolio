@@ -5,7 +5,6 @@
   font-weight: 300;
 
 }
-
 body{
     
 }
@@ -87,17 +86,12 @@ body{
     font-family: "Michroma", sans-serif;
     font-size: 70px;
     font-weight: bold;
-
-
 }
 
-#projectcontainer{
-    background-color: #572103;
-
-}
 
 #projectcontainer{
     color:white;
+    background-color: #572103;
 }
 
 
