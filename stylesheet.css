@@ -9,6 +9,7 @@ body{
     
 }
 
+
 #stickyheader{
     display: flex;
     position: sticky;
@@ -24,6 +25,15 @@ body{
     font-size: max(1.7vh,2vw);
     letter-spacin: 0px;
     font-weight: 500;
+    color: black;
+}
+
+#stickyheader a{
+    font-size: max(1.7vh,2vw);
+    letter-spacin: 0px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
 }
 #nameflexbox {
     display: flex;
@@ -128,3 +138,6 @@ body{
 
 }
 
+footer{
+    background-color: blue;
+}

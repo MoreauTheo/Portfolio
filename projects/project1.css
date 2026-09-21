@@ -6,6 +6,10 @@
   font-weight: 300;
 }
 
+a:visited{
+  text-decoration: none;
+}
+
 #stickyheader {
   display: flex;
   position: sticky;
@@ -17,10 +21,19 @@
   align-items: center;
 }
 
-#stickyheader p {
-  font-size: max(1.7vh, 2vw);
-  letter-spacing: 0px;
-  font-weight: 500;
+#stickyheader p{
+    font-size: max(1.7vh,2vw);
+    letter-spacin: 0px;
+    font-weight: 500;
+    color: black;
+}
+
+#stickyheader a{
+    font-size: max(1.7vh,2vw);
+    letter-spacin: 0px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
 }
 
 #headerbanner {
@@ -42,40 +55,68 @@
 .contentsection {
   display: flex;
   flex-wrap: wrap;
-  
   gap: 30px;
   align-items: flex-start;
   justify-content: center;
 }
 
 .contentsection img {
-  flex: 0 0 auto;
+  flex: 0 0 auto; 
   width: 550px;
   max-width: 100%;
-  height: auto !important; 
-  object-fit: contain;
+  height: auto !important;
+  object-fit: cover;
 }
 
 .textwrapper {
   display: flex;
-  flex: 1 1 500px;
+  flex:  1 400px; 
 }
 
 .textwrapper p {
   width: 100%;
   line-height: 1.6;
-  font-size: 20px
+  font-size: 20px;
 }
 
-.sectionodd{
-  padding-left: 50px ;
+.section {
+  padding-left: 50px;
   padding-top: 25px;
-  padding-right: 25px;
-
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 
-.sectiontitle{
-    font-family: "Michroma", sans-serif;
-    font-size: max(2.5vh,3vw);
-    margin-bottom: 15px ;
+#odd{
+  background-color: grey;
+}
+
+#even{
+  background-color: orange;
+}
+
+#odd .textwrapper {
+  order: 1;
+}
+
+#odd img {
+  order: 2;
+}
+
+#even img {
+  order: 1;
+}
+
+#even .textwrapper {
+  order: 2;
+}
+
+.sectiontitle {
+  font-family: "Michroma", sans-serif;
+  font-size: max(2.5vh, 3vw);
+  margin-bottom: 25px;
+}
+
+footer{
+  fl
+  background-color: blue;
 }
