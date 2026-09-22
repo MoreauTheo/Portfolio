@@ -87,7 +87,7 @@ a:visited{
 }
 
 #odd{
-  background-color: grey;
+  background-color: navajowhite;
 }
 
 #even{
@@ -116,7 +116,25 @@ a:visited{
   margin-bottom: 25px;
 }
 
-footer{
-  fl
-  background-color: blue;
+
+footer {
+    display: flex;
+    flex-flow: column;
+    background-color: grey;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#imageslink {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer img {
+    max-width: 200px;
+    padding: 50px;
+    padding-bottom: 10px;
 }
