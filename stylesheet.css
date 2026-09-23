@@ -123,6 +123,10 @@ body{
     margin: 3vw;
 }
 
+.project img{
+    min-width: 550px;
+}
+
 .project th{
     font-size: 30px;
     font-weight: normal;
