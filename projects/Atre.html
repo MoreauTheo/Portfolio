@@ -32,7 +32,7 @@
             </br>Ce projet est le résultat projet annuel de ma 3eme année de bachelor à l'ICAN Lille. 
             Ce projet à été créer afin d'explorer les mecaniques d'artisanat dans le jeu vidéo.
             </br>
-            Dans A.T.r.E, le joueur doit combiner des matériaux pour créer des planetes et récupérer plus de ressouces.
+            Dans A.T.R.E, le joueur doit combiner des matériaux pour créer des planetes et récupérer plus de ressouces.
             </p> 
             </div>
           
@@ -43,7 +43,10 @@
         <div class="contentsection" >
               <img src="../ressources/images/imagetest.webp">
               <div class="textwrapper"> 
-            <p>La mécanique principal repose sur le fait d'assembler plusieurs forme pour faire des formes de plus en plus complexes. Pour cela, j'ai implémenté un système de modification de texture en runtime en utilisant des render targets et des materials. Utiliser des render target m'a aussi permis de pouvoir faire un système de lecture de la forme construite et permettant de réagir aux formes créées par le joueur.</p> 
+            <p>La mécanique principal repose sur le fait de superposer et de soustraires plusieurs formes entre elles. 
+            Pour calculer la forme produite par le joueur, j'utilise le système de material présent dans unity. En fournissant au material les formes séléctionné par le joueur ainsi que les modifications appliqué au formes comme la rotation, le material calcule une nouvelle forme et la render sur une render target. Cela permet au joueur d'ajouter différentes formes et de ne pas le bloquer sur un nombre défini d'inputs. </br></br>
+            Sauvegarder le résultat des formes sur une render target me permet aussi de pouvoir lire la texture, permettant de savoir qu'elle partie est colorié ou non, permettant au jeu d'attribuer différents bonus/malus au joueur en fonction de la forme crée.
+            </p> 
             </div>
           
         </div>
@@ -63,7 +66,7 @@
         <div class="contentsection" >
               <img src="../ressources/images/imagetest.webp">
               <div class="textwrapper"> 
-            <p>Un travail particulier à été fournis pour pouvoir rendre diégétique les interfaces du jeu. Passer en World-Space nos interfaces posent des contraintes sur la manière de les construire. De plus, il faut s'assurer que les interfaces reagissent au curseur du joueur.</p> 
+            <p>Un travail particulier à été fournis pour pouvoir rendre diégétique les interfaces du jeu. Passer en World-Space nos interfaces posent des contraintes sur la manière de les construire, il faut prendre en compte leur taille dans le niveau plutôt que sur l'écran du joueur.</p> 
             </div>
         </div>
     </div>
