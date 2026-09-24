@@ -42,7 +42,7 @@
               <img src="../ressources/images/imagetest.webp">
               <div class="textwrapper"> 
             <p>
-            Le système d'engrenages à été la partie que j'ai le plus apprécié développer. Le jeu appelle une fonction récursive pour faire tourner l'ensemble des rouages. Un des challenge de ce système à été d'éviter les stacks overflow, mais surtout de detecter si une chaîne ne peut pas tourner à cause de deux engrenages tourne dans le même sens.</p> 
+            Pour centraliser le système, j'ai implémenter un manager qui gère la rotation des engrenages. Celui-ci appelle la fonction de rotations de tout les moteurs, et appelle recursivement la fonction de rotation de tout les engrenages attachés. Utiliser un manager permet de garder en mémoire quel rouages à déja tourné afin de ne pas appeler la même logique plusieurs fois sur le même rouage. De plus, cela permet de bloquer la chaîne si 2 rouages tournant dans le même sens sont adjacents.</p> 
             </div>
           
         </div>
