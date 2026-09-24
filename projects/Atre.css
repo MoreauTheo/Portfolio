@@ -98,28 +98,28 @@ a:visited{
   padding-bottom: 50px;
 }
 
-#odd{
+.odd{
   background-color: #141414;
   color: white;
 }
 
-#even{
+.even{
   background-color: #c19036;
 }
 
-#odd .textwrapper {
+.odd .textwrapper {
   order: 1;
 }
 
-#odd img {
+.odd img {
   order: 2;
 }
 
-#even img {
+.even img {
   order: 1;
 }
 
-#even .textwrapper {
+.even .textwrapper {
   order: 2;
 }
 
@@ -129,6 +129,15 @@ a:visited{
   margin-bottom: 25px;
 }
 
+#Widgets #leftblock{
+  display: flex;
+  width: 550px;
+  flex-flow: column;
+}
+
+#Widgets #leftblock p{
+  padding-right: 10px;
+}
 
 footer {
     display: flex;
