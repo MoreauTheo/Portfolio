@@ -80,8 +80,8 @@ a:visited{
   width: 100%;
   line-height: 1.6;
   font-size: 20px;
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .textwrapper table{
@@ -96,12 +96,12 @@ a:visited{
 }
 
 #odd{
-  background-color: #141414;
-  color: white;
+  background-color: #DACABC;
+  color: black;
 }
 
 #even{
-  background-color: #c19036;
+  background-color: #894141;
 }
 
 #odd .textwrapper {

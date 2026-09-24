@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="Atre.css" />
+    <link rel="stylesheet" href="ForgottenGear.css" />
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wdth,wght@97.1,400..900&display=swap" rel="stylesheet">
 <body>
 
@@ -29,29 +29,35 @@
                     <tr><td>Temps de développement : 4 mois</td></tr>
             </table>
             <p>
-            </br>Forgotten Gears est un projet semestriel de ma seconde année de bachelor à l'ICAN Lille. 
-            
+            </br>Forgotten Gears est un projet semestriel de ma seconde année de bachelor à l'ICAN Lille. </br>
+            Dans Forgotten Gears, le joueur doit compléter des systèmes d'engrenages et explorer son environnement pour découvrir l'histoire d'un ancien peuple.
             </p> 
             </div>
           
         </div>
     </div>
     <div class="section" id="even">
-    <p class="sectiontitle">Utilisation d'une texture en runtime</p>
+    <p class="sectiontitle">Système d'engrenages</p>
         <div class="contentsection" >
               <img src="../ressources/images/imagetest.webp">
               <div class="textwrapper"> 
-            <p>La mécanique principal repose sur le fait d'assembler plusieurs forme pour faire des formes de plus en plus complexes. Pour cela, j'ai implémenté un système de modification de texture en runtime en utilisant des render targets et des materials. Utiliser des render target m'a aussi permis de pouvoir faire un système de lecture de la forme construite et permettant de réagir aux formes créées par le joueur.</p> 
+            <p>
+            Le système d'engrenages à été la partie que j'ai le plus apprécié développer. Le jeu appelle une fonction récursive pour faire tourner l'ensemble des rouages. Un des challenge de ce système à été d'éviter les stacks overflow, mais surtout de detecter si une chaîne ne peut pas tourner à cause de deux engrenages tourne dans le même sens (feature qui, malheureusement, n'as pas pue être intégré dans le level design).</p> 
             </div>
           
         </div>
     </div>
     <div class="section" id="odd">
-    <p class="sectiontitle">Gestion de la caméra</p>
+    <p class="sectiontitle">Custom Character Controller</p>
         <div class="contentsection">
               <img src="../ressources/images/imagetest.webp">
               <div class="textwrapper"> 
-            <p>Pour pouvoir passer d'écran à écran, j'ai créer un systèmes de transition de caméra avec des splines. Cela à permis à mon équipe de pouvoir plus facilement itérer sur les transitions. Afin d'affiner les transitions, j'ai ajouté plusieurs paramètres afin de pouvoir ajuster la vitesse ou la rotation de la caméra.</p> 
+            <p>Pour ce projet, j'ai créée un Character Controller custom. Le Controller implémente les features suivantes :</p> 
+             <table>
+                    <tr><td>- Detection des collisions</td></tr>
+                    <tr><td>- Gestion des sauts</td></tr>
+                    <tr><td>- Paramètres de customisation</td></tr>
+            </table>
             </div>
           
         </div>
