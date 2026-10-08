@@ -13,7 +13,7 @@
         <p>CV</p>
     </div>
    <div id="headerbanner">
-    <p class="title">Forgotten Gears</p>
+    <p class="title">Lab O-Fee</p>
    </div> 
    <div class="section" id="odd">
     <p class="sectiontitle">Présentation</p>
@@ -23,50 +23,37 @@
             <table>
                     <tr><td>Informations :</td></tr>
                     <tr><td>Moteur : Unity</td></tr>
-                    <tr><td>Type de projet : Projet scolaire</td></tr>
+                    <tr><td>Type de projet : Projet professionnel</td></tr>
                     <tr><td>Mon rôle: Game Programmer</td></tr>
-                    <tr><td>Taille du groupe : 5 personnes</td></tr>
+                    <tr><td>Taille du groupe : 2 personnes</td></tr>
                     <tr><td>Temps de développement : 4 mois</td></tr>
                     <tr><td><a href="https://github.com/MoreauTheo/ForgottenGear">Github</a> - <a href="https://moreau-theo.itch.io/forgotten-gear">Itch.io</a></td></tr>
             </table>
             <p>
-            </br>Forgotten Gears est un projet semestriel de ma seconde année de bachelor à l'ICAN Lille. </br>
-            Dans Forgotten Gears, le joueur doit compléter des systèmes d'engrenages et explorer son environnement pour découvrir l'histoire d'un ancien peuple.
+            </br>Lab O-Fee est le fruit de mon stage de première et troisème année de bachelor à l'ICAN Lille. Le but de ce projet est ludifier et automatiser la passation d'experience scientifique. Les points clés on été un concept de jeu permettant de récupéré des data scientifique utilisable, ainsi que l'implémentation de la récolte des données.
             </p> 
             </div>
           
         </div>
     </div>
     <div class="section" id="even">
-    <p class="sectiontitle">Système d'engrenages</p>
+    <p class="sectiontitle">Enregistrement des données de jeu</p>
         <div class="contentsection" >
               <img src="../ressources/images/FGGears.gif">
               <div class="textwrapper"> 
             <p>
-            Pour centraliser le système, j'ai implémenter un manager qui gère la rotation des engrenages. Celui-ci appelle la fonction de rotations de tout les moteurs, et appelle recursivement la fonction de rotation de tout les engrenages attachés. Utiliser un manager permet de garder en mémoire quel rouages à déja tourné afin de ne pas appeler la même logique plusieurs fois sur le même rouage. De plus, cela permet de bloquer la chaîne si 2 rouages tournant dans le même sens sont adjacents.</br> </br>
-            Pour gérer le faire un système de grille pour les rouages, j'arrondi les valeurs dans leurs vecteurs de position. Cela force les rouages à avoir exactement une unité de distance entre eux même et leur voisin. Pour réussir à construire l'environnement,  nous avons fait plusieurs tests en moteur pour construire les différents éléments du jeu à la bonne échelle, comme les rouages ou les quadriallages sur lesquels ils sont posés.
+            Pour que les valeurs puissent être utilisé scientifiquement parlant, il fallait enregistrer non seulement les actions du joueur, mais aussi le contexte (la position des verres, si la lumière est allumé, depuis combien de temps le joueur joue). Durant sa partie, le jeu enregistres ses différentes informations à un intervalle régulier et les stock dans des listes. En fin de partie, durant l'animation présentant le score au joueur, le jeu créer un fichier .csv et écris les différentes informations stockées dans celui-ci. Ce choix permet de ne pas prendre trop de ressources sur les ordinateurs moins performants.
             </p> 
             </div>
           
         </div>
     </div>
     <div class="section" id="odd">
-    <p class="sectiontitle">Custom Character Controller</p>
+    <p class="sectiontitle">Envoie des données>/p>
         <div class="contentsection">
               <img src="../ressources/images/FGCharacterController.webp">
               <div class="textwrapper"> 
-            <p>Pour ce projet, j'ai créée un Character Controller custom. 
-            </br>
-            </br>
-            Le Controller implémente les features suivantes :</p> 
-             <table>
-                    <tr><td>- Detection des collisions</td></tr>
-                    <tr><td>- Gestion des sauts</td></tr>
-                    <tr><td>- Paramètres de customisation</td></tr>
-            </table>
-            </br>
-            </br>
-            <p>Le but de ce custom controller était d'avoir la main mise sur le fonctionnement du personnage et de pouvoir se démarquer des déplacements de base présent dans Unity. Pour cela , la présence de multiples paramètres est essentiel.
+            <p>Afin de pouvoir automatiser la récolte de données, le jeu envoie automatiquement une requête php à un serveur </p>
             </div>
           
         </div>
